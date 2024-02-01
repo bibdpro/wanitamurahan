@@ -1,0 +1,25 @@
+{
+  "name": "Wanita Murahan - Nonton Video Porno Gratis dan Film Seks Terbaru",
+  "short_name": "Wanita Murahan",
+  "description": "Cari sensasi seru? WANITA MURAHAN punya koleksi film seksi gratis dan video porno cepat (tube porn). Sekarang ada lebih dari 10 juta video seks gratis! Nikmati aksi panas, cewek-cewek seksi dalam klip porno berkualitas xxx. Gak cuma itu, ada juga yang lagi viral dan bikin kamu makin penasaran!",
+  "icons": [
+    {
+      "src": "./ress/icon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./ress/icon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "scope": "/",
+  "lang": "id"
+}
