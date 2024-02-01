@@ -1,8 +1,6 @@
 """
 MP4 to JPG Converter
 
-This script converts all MP4 files in the "video" folder to JPG images and saves them in the "image" folder.
-
 Author: [Wanita Murahan]
 Date: [1 Februari 2024]
 """
