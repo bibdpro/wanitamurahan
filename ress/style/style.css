@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Love+Light&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 3rem 0 0 0;
+  background: hsl(222, 63%, 97%);
+  color: hsl(174, 8%, 35%);
+  font-family: 'Varela Round', sans-serif;
+}
+
+/* Header */
+.xheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  background: hsla(235, 0%, 100%, 1);
+  z-index: 100
+}
+
+.xnav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.xtitle {
+  color: hsl(174, 12%, 15%);
+  font-family: 'Love Light', cursive;
+}
+
+.xnav-list,
+.xnav-link {
+  display: flex;
+}
+
+.xnav-link {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  color: hsl(174, 12%, 15%);
+  font-weight: 600;
+}
+
+.xnav-list {
+  justify-content: space-around;
+}
+
+.active-link {
+  position: relative;
+  color: hsla(235, 86%, 53%, 1);
+  transition: .3s;
+}
+
+.xnav-name {
+  font-size: .625rem;
+}
+
+.xnav-icon {
+  font-size: 1.5rem;
+}
+
+/* Header Responsive */
+@media screen and (max-width: 320px) {
+  .xnav-name {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .xnav-list {
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .xnav-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: hsla(235, 0%, 100%, 1);
+    box-shadow: 0 -1px 12px hsla(174, 63%, 15%, 0.15);
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    display: grid;
+    align-content: center;
+    border-radius: 1.25rem 1.25rem 0 0;
+    transition: .4s;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .xnav {
+    height: calc(3rem + 1.5rem);
+  }
+
+  .xnav-icon {
+    display: none;
+  }
+
+  .xnav-name {
+    font-size: .938rem;
+  }
+
+  .xnav-link:hover {
+    color: hsla(235, 86%, 53%, 1);
+  }
+
+  .active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    width: 4px;
+    height: 4px;
+    background-color: hsl(174, 63%, 40%);
+    border-radius: 50%;
+  }
+}
+
+/* Main */
+.xmain {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  margin-bottom: 50px;
+}
+
+.xmain>div {
+  display: none;
+}
+
+.xmain>div.active-section {
+  display: block;
+}
+
+/* Media */
+.wrapper-mediax {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.mediax-item {
+  position: relative;
+  overflow: hidden;
+  max-height: 250px;
+  border-radius: 10px;
+  border: 4px solid hsla(230, 0%, 100%, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mediax-item .imgx {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mediax-item:hover .imgx {
+  transform: scale(1.1);
+}
+
+.mediax-item:nth-child(3n - 2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.imgx-content {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mediax-title {
+  padding: 10px;
+  margin-top: 20px;
+  color: hsla(253, 0%, 100%, 1);
+  background: hsla(0, 0%, 100%, 0.5);
+  border-radius: 5px;
+  border: 2px solid #fff;
+  backdrop-filter: blur(15px);
+}
+
+.mediax-link {
+  font-size: 35px;
+  color: hsla(253, 0%, 100%, 1);
+}
+
+.imgx-content:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .wrapper-mediax {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mediax-item:nth-child(3n - 2) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}

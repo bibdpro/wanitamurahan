@@ -22,4 +22,8 @@ Jika Anda atau seseorang yang Anda kenal mengalami kecanduan terhadap konten dew
 
 5. **Dukungan Sosial:** Dapatkan dukungan dari teman, keluarga, atau kelompok pendukung untuk membantu Anda melewati proses ini.
 
+<<<<<<< HEAD
 Ingatlah bahwa kesehatan mental dan kehidupan seksual yang sehat adalah hak bagi setiap individu. Pastikan untuk mengambil tindakan yang diperlukan untuk menjaga kesehatan dan kebahagiaan Anda.
+=======
+Ingatlah bahwa kesehatan mental dan kehidupan seksual yang sehat adalah hak bagi setiap individu. Pastikan untuk mengambil tindakan yang diperlukan untuk menjaga kesehatan dan kebahagiaan Anda.
+>>>>>>> cbf9198 (Upload my project)
